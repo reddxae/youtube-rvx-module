@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MODULE_TEMPLATE_DIR="revanced-magisk"
+MODULE_TEMPLATE_DIR="revanced-module"
 CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
@@ -601,12 +601,12 @@ build_rv() {
 		module_prop \
 			"${args[module_prop_name]}" \
 			"${app_name} ${args[rv_brand]}" \
-			"${version} (patches: ${rv_patches_ver%%.rvp})" \
-			"${app_name} ${args[rv_brand]} Magisk module" \
+			"${version}, patches: ${rv_patches_ver%%.rvp}" \
+			"Open-source modification of the official YouTube app, offering ad-free viewing and numerous additional features." \
 			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY-}/update/${upj}" \
 			"$base_template"
 
-		local module_output="${app_name_l}-${rv_brand_f}-magisk-v${version_f}-${arch_f}.zip"
+		local module_output="${app_name_l}-${rv_brand_f}-v${version_f}-${arch_f}.zip"
 		pr "Packing module ${table}"
 		cp -f "$patched_apk" "${base_template}/base.apk"
 		if [ "${args[include_stock]}" = true ]; then cp -f "$stock_apk" "${base_template}/${pkg_name}.apk"; fi
@@ -634,7 +634,7 @@ MODULE_ARCH=$ma" >"$1/config"
 module_prop() {
 	echo "id=${1}
 name=${2}
-version=v${3}
+version=${3}
 versionCode=${NEXT_VER_CODE}
 author=inotia00, reddxae
 description=${4}" >"${6}/module.prop"
