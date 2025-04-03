@@ -166,6 +166,7 @@ rm -rf temp/tmp.*
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
 log "Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root installation of ReVanced from Play Store."
+log ""
 log "$(cat "$TEMP_DIR"/*-rv/changelog.md)"
 
 SKIPPED=$(cat "$TEMP_DIR"/skipped 2>/dev/null || :)
