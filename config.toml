@@ -4,7 +4,6 @@ parallel-jobs = 1
 rv-brand = "ReVanced Extended"
 
 [YouTube]
-app-name = "YouTube ReVanced Extended"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "inotia00/revanced-patches"
 patches-version = "v5.6.2"
