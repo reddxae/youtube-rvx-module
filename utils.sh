@@ -630,9 +630,10 @@ module_config() {
 	echo "PKG_NAME=$2
 PKG_VER=$3
 MODULE_ARCH=$ma" >"$1/config"
+
 }
 module_prop() {
-	echo "id=${1}
+	echo "id=youtube-revanced-extended
 name=${2}
 version=${3}
 versionCode=${NEXT_VER_CODE}
