@@ -1,13 +1,13 @@
 enable-magisk-update = true
 compression-level = 9
 parallel-jobs = 1
+rv-brand = "ReVanced Extended"
 
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "reddxae/revanced-patches"
 patches-version = "latest"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended"
 arch = "arm64-v8a"
 build-mode = "module"
 version = "19.47.53"
