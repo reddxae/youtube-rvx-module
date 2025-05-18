@@ -637,7 +637,7 @@ module_prop() {
 name=${2}
 version=${3}
 versionCode=${NEXT_VER_CODE}
-author=inotia00, reddxae
+author=ReVanced Team, inotia00, reddxae
 description=${4}" >"${6}/module.prop"
 
 	if [ "$ENABLE_MAGISK_UPDATE" = true ]; then echo "updateJson=${5}" >>"${6}/module.prop"; fi
