@@ -1,4 +1,4 @@
-YouTube: 19.20.34  
+YouTube: 19.16.39  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root installation of ReVanced from Play Store.  
   
 CLI: j-hc/revanced-cli-5.0.0-all.jar  
